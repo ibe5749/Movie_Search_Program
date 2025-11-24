@@ -1,3 +1,5 @@
+package MySQL_example;
+
 import java.sql.*;
 
 public class MySQLJDBC {
@@ -34,7 +36,7 @@ public class MySQLJDBC {
 		}catch (SQLException ex) {
 			//Handle errors for JDBC
 			ex.printStackTrace();
-		} catch (Exception e){
+		}catch (Exception e) {
 		    //Handle errors for Class.forName
 			e.printStackTrace();
 		}
