@@ -68,7 +68,7 @@ def search_by_release_date():
         SELECT id, title, company, releasedate, country, totalscreen, profit, totalnum, grade
         FROM movie
         WHERE releasedate BETWEEN %s AND %s
-        ORDER BY id;
+        ORDER BY releasedate, title;
     """
 
     con = get_connection()
